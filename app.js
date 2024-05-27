@@ -4,6 +4,7 @@ const path = require('path');
 const apiRouter = require('./routes/api');
 const cookieParser = require("cookie-parser");
 const pagesRouter = require("./routes/pages");
+const cors = require('./middlewares/cors');
 
 const connectToDatabase = require('./database/connect')
 
@@ -13,6 +14,7 @@ const app = express();
 connectToDatabase();
 
 app.use(
+    cors,
     cookieParser(),
     bodyParser.json(),
     pagesRouter,

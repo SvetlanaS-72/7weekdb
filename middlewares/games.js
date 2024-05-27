@@ -32,7 +32,7 @@ const findGameById = async(req, res, next) => {
   }catch(error){
     res.status(404).send({message:"Game not found"});
   }
-}
+};
 
 const createGame = async (req, res, next) => {
     console.log("POST /games");
