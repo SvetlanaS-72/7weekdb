@@ -1,6 +1,12 @@
+
+
 const allowedCors = [ "http://localhost:3000", 
                       "http://localhost:3001", 
-                      "https://student-svetf.nomoredomainswork.ru"
+                      "https://student-svetf.nomoredomainswork.ru",
+			"http://student-svetf.nomoredomainswork.ru",
+			"http://student-svets.nomoredomainswork.ru",
+			"https://student-svets.nomoredomainswork.ru"		`
+
                     ];
 
 function cors(req, res, next) {

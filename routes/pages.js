@@ -1,4 +1,4 @@
-const { sendDashboard, sendIndex } = require("../controllers/auth");
+const { sendDashboard, sendIndex } = require("../controllers/auth.js");
 const { checkCookiesJWT, checkAuth } = require("../middlewares/auth");
 
 
